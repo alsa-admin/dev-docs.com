@@ -1,0 +1,27 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<?php
+		echo $this->headTitle();
+		echo $this->headLink();
+		echo $this->headScript();
+	?>
+</head>
+<body>
+	<div id="grid-wrapper" class="container">
+		<header class="row">
+			<nav>
+
+			</nav>
+			<div class="clearfix-50"></div>
+			<section id="logo" class="threecol last">
+				<a href="/"><img alt="logo" src="images/general/main-logo.png" /> </a>
+			</section>
+		</header>
+		<section id="main-wrapper" class="row">
+			<?php echo $this->layout()->content; ?>
+		</section>
+	</div>
+</body>
+</html>
