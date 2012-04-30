@@ -11,17 +11,13 @@
 <body>
 	<div id="grid-wrapper" class="container">
 		<header class="row">
-			<nav>
-
-			</nav>
+			<?php echo $this->render('_nav.phtml'); ?>
 			<div class="clearfix-50"></div>
 			<section id="logo" class="threecol last">
 				<a href="/"><img alt="logo" src="images/general/main-logo.png" /> </a>
 			</section>
 		</header>
-		<section id="main-wrapper" class="row">
-			<?php echo $this->layout()->content; ?>
-		</section>
 	</div>
+	<?php echo $this->layout()->content; ?>
 </body>
 </html>

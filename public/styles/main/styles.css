@@ -7,14 +7,21 @@
     /**********************************************************************************************************************************************************
     * FONT KITS																																																														                  *
     *********************************************************************************************************************************************************/
-/*@import url('fonts*//*/stylesheet.css');*/
+@import url('../fonts/sofiapro_light_macroman/stylesheet.css');
 /*@import url('fonts*//*/stylesheet.css');*/
 /*@import url('fonts*//*/stylesheet.css');*/
 
 /**********************************************************************************************************************************************************
  * DEFAULTS/NORMALIZATIONS/BODY																																																														*
  *********************************************************************************************************************************************************/
+* {
 
+}
+
+body {
+    font-family: 'SofiaProLight';
+    color:#93B63D;
+}
 /**********************************************************************************************************************************************************
  * HEADER/NAVIGATION        																																																															*
  *********************************************************************************************************************************************************/
@@ -22,9 +29,114 @@
     clear:both;
     height: 50px;
 }
+
+.clearfix-120 {
+    clear:both;
+    height:120px;
+}
+
+nav {
+    text-align: right;
+}
+nav ul li {
+    list-style-type: none;
+    color: #4B4B4B;
+    font-family: sofiaprolight;
+    font-size: 10px;
+    display: inline;
+}
+
+nav ul li a, a:visited, a:hover {
+    color: #4B4B4B;
+    text-decoration: none,
+}
+
 /**********************************************************************************************************************************************************
  * CONTENT       																																																															            *
  *********************************************************************************************************************************************************/
+div#content-wrapper {
+    border-top: 4px solid #B5BFAF;
+    border-bottom: 4px solid #4B4B4B;
+}
+
+section#intro-main {
+    font-family: 'SofiaProLight';
+    color:#93B63D;
+    height:180px;
+}
+
+ul.slide {
+    text-align: right;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+ul.slide li {
+    list-style-type: none;
+}
+
+/**
+*/
+ul#intro-slide-4 {
+    position:relative;
+    text-align: center;
+}
+
+ul#intro-slide-4 li {
+    display:inline;
+    position: absolute;
+}
+
+ul#intro-slide-4 li:first-child {
+    left:0;
+}
+
+ul#intro-slide-4 li:last-child {
+    right:0;
+}
+section#intro-signup {
+    text-align: center;
+}
+
+ul#signup li{
+    margin: 35px 0;
+    display: block;
+}
+
+ul#signup-form {
+    display:block;
+}
+
+section#intro-thank-you {
+    display: none;
+    text-align: center;
+}
+/**********************************************************************************************************************************************************
+ * FORMS      																																																															            *
+ *********************************************************************************************************************************************************/
+form {
+    margin:0;
+    padding:0;
+    display: block;
+}
+
+input[type=submit]{
+    background: transparent;
+    color:#93B63D;
+    border:none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type=text]{
+    border-radius: 6px;
+    box-shadow: 1px 1px 16px #362F2D;
+    font-family: sofiaprolight;
+    font-size: 14px;
+    text-align: center;
+    color:#4B4B4B;
+    width:400px;
+}
 
 /**********************************************************************************************************************************************************
  * FOOTER      																																																															            *
